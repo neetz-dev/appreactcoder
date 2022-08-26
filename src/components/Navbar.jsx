@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
+import Cartwidget from './Cartwidget/Cartwidget'
+
+
 
 function Navbar() {
 
@@ -11,10 +14,11 @@ function Navbar() {
     return (
     <>
         <NavContainer>
-        <h2>Navbar <span>Responsive</span></h2>
+        <h2>JR Motos <span>By Matt</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
             <a onClick={handleClick} href="#h">Home</a>
-            <a onClick={handleClick} href="#h">Shop</a>
+            <a onClick={handleClick} href="#h">
+            <Cartwidget></Cartwidget></a>
             <a onClick={handleClick} href="#h">About</a>
             <a onClick={handleClick} href="#h">Contact</a>
             <a onClick={handleClick} href="#h">Blog</a>
