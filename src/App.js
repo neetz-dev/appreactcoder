@@ -1,23 +1,17 @@
 import './App.css';
-import { Contador } from './components/Contador';
+import React from 'react';
+import 'bulma/css/bulma.min.css';
 import ItemListContainer from './components/ItemListContainer';
 import Navbar from './components/Navbar';
 
-
-
-
-
 function App() {
+
   return (
-  <>
-    <Navbar />
-    <ItemListContainer greeting='Welcome'/>
-    <Contador />
-  </>
+    <>
+        <Navbar />
+        <ItemListContainer />
+    </>
   );
 }
 
-
-
 export default App;
-
